@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>646.jpg</file>
+        <file>intro01.jpg</file>
+        <file>franck-v-628397-unsplash.jpg</file>
+        <file>images/stars1.png</file>
+        <file>images/stars2.png</file>
+        <file>images/stars3.png</file>
+        <file>images/stars4.png</file>
+        <file>images/stars5.png</file>
+        <file>images/down.png</file>
+        <file>images/upload.png</file>
+        <file>avatarRobot.png</file>
+    </qresource>
+</RCC>
