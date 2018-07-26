@@ -26,10 +26,7 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="stackedWidgetPage1">
+      <widget class="QWidget" name="stackedWidgetPage1" native="true">
        <layout class="QGridLayout" name="gridLayout">
         <item row="2" column="0">
          <spacer name="horizontalSpacer_2">
@@ -115,21 +112,14 @@
         </item>
        </layout>
       </widget>
-      <widget class="NewGameForm" name="stackedWidgetPage2"/>
+      <widget class="QWidget" name="stackedWidgetPage2" native="true"/>
+      <widget class="QWidget" name="stackedWidgetPage3" native="true"/>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <customwidgets>
-  <customwidget>
-   <class>NewGameForm</class>
-   <extends>QWidget</extends>
-   <header>newgameform.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

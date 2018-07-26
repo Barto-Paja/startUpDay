@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,7 +30,11 @@ SOURCES += \
     formcharacter.cpp \
     bot.cpp \
     newgameform.cpp \
-    formrobot.cpp
+    formrobot.cpp \
+    formgamestates.cpp \
+    formskilltree.cpp \
+    formarena.cpp \
+    databasemanagementlite.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,13 +42,20 @@ HEADERS += \
     formcharacter.h \
     bot.h \
     newgameform.h \
-    formrobot.h
+    formrobot.h \
+    formgamestates.h \
+    formskilltree.h \
+    formarena.h \
+    databasemanagementlite.h
 
 FORMS += \
         mainwindow.ui \
     formcharacter.ui \
     newgameform.ui \
-    formrobot.ui
+    formrobot.ui \
+    formgamestates.ui \
+    formskilltree.ui \
+    formarena.ui
 
 DISTFILES +=
 
