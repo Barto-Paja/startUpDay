@@ -8,7 +8,8 @@ int main(int argc, char *argv[])
     w.setWindowFlags(Qt::Window /*| Qt::FramelessWindowHint*/);
     //w.setStyleSheet("QWidget {background-image: url(:/images/intro01.jpg) }");
     w.showFullScreen();//();//FullScreen();
-    w.drawBackground();
+    QPixmap bkgnd(":/images/franck-v-628397-unsplash.jpg");
+    w.drawBackground(bkgnd);
 
     return a.exec();
 }

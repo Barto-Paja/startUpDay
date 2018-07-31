@@ -26,6 +26,7 @@ private:
     QString thirdLanguage;
 
     int salary;
+    int metascore;
 };
 
 #endif // CHARACTER_H

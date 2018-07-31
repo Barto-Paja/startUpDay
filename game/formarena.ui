@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>862</width>
-    <height>798</height>
+    <height>853</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,9 +29,9 @@
     </widget>
    </item>
    <item row="3" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_4">
+    <layout class="QVBoxLayout" name="verticalLayout_BlueTeamPlayerTwo">
      <item>
-      <widget class="QLabel" name="label_10">
+      <widget class="QLabel" name="label_RobotAvatarBT_2">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -45,19 +45,35 @@
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_11">
+      <widget class="QLabel" name="label_RobotNameBT_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_12">
+      <widget class="QLabel" name="label_PlayerNameBT_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -65,6 +81,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_7">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -72,6 +94,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_8">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -80,9 +108,9 @@
     </layout>
    </item>
    <item row="4" column="2">
-    <layout class="QVBoxLayout" name="verticalLayout_5">
+    <layout class="QVBoxLayout" name="verticalLayout_RedTeamPlayerThree">
      <item>
-      <widget class="QLabel" name="label_13">
+      <widget class="QLabel" name="label_RobotAvatarRT_3">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -96,19 +124,35 @@
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_14">
+      <widget class="QLabel" name="label_RobotNameRT_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_15">
+      <widget class="QLabel" name="label_PlayerNameRT_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -116,6 +160,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_9">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -123,6 +173,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_10">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -131,9 +187,9 @@
     </layout>
    </item>
    <item row="3" column="2">
-    <layout class="QVBoxLayout" name="verticalLayout_6">
+    <layout class="QVBoxLayout" name="verticalLayout_RedTeamPlayerTwo">
      <item>
-      <widget class="QLabel" name="label_16">
+      <widget class="QLabel" name="label_RobotAvatarRT_2">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -147,19 +203,35 @@
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_17">
+      <widget class="QLabel" name="label_RobotNameRT_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_18">
+      <widget class="QLabel" name="label_PlayerNameRT_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -167,6 +239,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_11">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -174,6 +252,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_12">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -182,9 +266,9 @@
     </layout>
    </item>
    <item row="4" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_3">
+    <layout class="QVBoxLayout" name="verticalLayout_BlueTeamPlayerThree">
      <item>
-      <widget class="QLabel" name="label_7">
+      <widget class="QLabel" name="label_RobotAvatarBT_3">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -198,19 +282,35 @@
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_8">
+      <widget class="QLabel" name="label_RobotNameBT_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_9">
+      <widget class="QLabel" name="label_PlayerNameBT_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -218,6 +318,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_5">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -225,6 +331,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_6">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -233,9 +345,9 @@
     </layout>
    </item>
    <item row="2" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_BlueTeamPlayerOne">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_RobotAvatarBT">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -249,19 +361,35 @@
         </size>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="label_RobotNameBT">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="label_PlayerNameBT">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -269,6 +397,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -276,6 +410,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_2">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -284,9 +424,9 @@
     </layout>
    </item>
    <item row="2" column="2">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout_RedTeamPlayerOne">
      <item>
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="label_RobotAvatarRT">
        <property name="minimumSize">
         <size>
          <width>100</width>
@@ -299,20 +439,42 @@
          <height>100</height>
         </size>
        </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/images/avatarRobot.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_5">
+      <widget class="QLabel" name="label_RobotNameRT">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Nazwa</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_6">
+      <widget class="QLabel" name="label_PlayerNameRT">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Gracz</string>
        </property>
@@ -320,6 +482,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_3">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -327,6 +495,12 @@
      </item>
      <item>
       <widget class="QProgressBar" name="progressBar_4">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="value">
         <number>24</number>
        </property>
@@ -368,7 +542,7 @@
     </spacer>
    </item>
    <item row="0" column="1">
-    <widget class="QLCDNumber" name="lcdNumber"/>
+    <widget class="QLCDNumber" name="lcdNumber_timer"/>
    </item>
    <item row="0" column="0">
     <spacer name="horizontalSpacer">
@@ -399,6 +573,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
