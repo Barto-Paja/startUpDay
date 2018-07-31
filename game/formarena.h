@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#include "fight/mechanismfight.h"
+
 namespace Ui {
 class FormArena;
 }
