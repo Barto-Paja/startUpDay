@@ -20,6 +20,8 @@ signals:
 private slots:
     void on_pushButton_Next_clicked();
 
+    void on_pushButton_AssemblerPointsUp_clicked();
+
 private:
     Ui::NewGameForm *ui;
 };

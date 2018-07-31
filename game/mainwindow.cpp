@@ -11,8 +11,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    qua = new QueryAccount();
 
-    NewGameForm ngf;
     QWidget *pageWidget = new NewGameForm();
     ui->stackedWidget->insertWidget(FormIDNewGame,pageWidget);
     connect(pageWidget,SIGNAL(exitPanel()), this, SLOT(exitNewGamePanel()));
@@ -76,4 +76,15 @@ void MainWindow::exitNewGamePanel()
 {
     ui->stackedWidget->setCurrentIndex(FormIDSetIcon);
     this->update();
+}
+
+void MainWindow::on_pushButton_Connect_clicked()
+{
+    QString login(ui->lineEdit_Login->text());
+    QString password(ui->lineEdit_Password->text());
+
+    if(qua->login(login,password)){
+        ui->label_LoginMessage->setText("Zalogowano pomyślnie!");
+    }else
+        ui->label_LoginMessage->setText("Błąd podczas logowania");
 }
