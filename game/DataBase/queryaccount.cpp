@@ -12,9 +12,9 @@ QueryAccount::~QueryAccount()
 
 bool QueryAccount::login(QString &login, QString &password)
 {
-    if(!open()){
-        return false;
-    }
+//    if(!open()){
+//        return false;
+//    }
 
     query->prepare("SELECT ID FROM Player WHERE LOGIN = :login AND PASSWORD = :password LIMIT 1");
     query->bindValue(":login",login);

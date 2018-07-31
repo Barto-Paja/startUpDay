@@ -2,5 +2,52 @@
 
 Character::Character()
 {
+   queryManager = new QueryStatsManager();
+   queryManager->getStat();
+}
 
+Character::~Character()
+{
+    delete queryManager;
+}
+
+void Character::setNature()
+{
+
+}
+
+void Character::setMorals(int value)
+{
+
+}
+
+void Character::setCondition()
+{
+
+}
+
+void Character::setTalent(int talent)
+{
+
+}
+
+void Character::setSpecialty()
+{
+
+}
+
+void Character::setHero()
+{
+
+}
+
+void Character::setSalary()
+{
+
+}
+
+int Character::getStat(Language_t type)
+{
+    qDebug() << queryManager->open();
+    return queryManager->showStat(type);
 }
