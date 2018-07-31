@@ -13,3 +13,8 @@ NewGameForm::~NewGameForm()
 {
     delete ui;
 }
+
+void NewGameForm::on_pushButton_Next_clicked()
+{
+    emit exitPanel();
+}

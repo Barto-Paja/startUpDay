@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::FormArena *ui;
+    void makeMirrorLookTeam();
 };
 
 #endif // FORMARENA_H

@@ -15,6 +15,7 @@ private:
     int movement;
     int energy;
     int energyLoad;
+    int expierience;
 
     QString specialMove;
     QString passive;

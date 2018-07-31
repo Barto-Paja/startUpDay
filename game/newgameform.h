@@ -2,6 +2,7 @@
 #define NEWGAMEFORM_H
 
 #include <QWidget>
+#include "formsstackmanagement.h"
 
 namespace Ui {
 class NewGameForm;
@@ -14,6 +15,10 @@ class NewGameForm : public QWidget
 public:
     explicit NewGameForm(QWidget *parent = 0);
     ~NewGameForm();
+signals:
+    void exitPanel();
+private slots:
+    void on_pushButton_Next_clicked();
 
 private:
     Ui::NewGameForm *ui;

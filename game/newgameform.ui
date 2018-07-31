@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(255, 255, 255, 205);</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="1">
     <spacer name="horizontalSpacer">
@@ -28,7 +31,12 @@
     </spacer>
    </item>
    <item row="4" column="3">
-    <widget class="QPushButton" name="pushButton_40">
+    <widget class="QPushButton" name="pushButton_TalentLevelDown">
+     <property name="styleSheet">
+      <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -50,14 +58,48 @@
      </property>
     </widget>
    </item>
+   <item row="8" column="1" colspan="3">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Opis</string>
+     </property>
+    </widget>
+   </item>
    <item row="8" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
       <string>Statystyki</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
+      <item row="15" column="1">
+       <widget class="QLabel" name="label_SQLPoints">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="label_Swift">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Swift</string>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="3">
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="pushButton_AssemblerPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -72,35 +114,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="17" column="0">
-       <widget class="QLabel" name="label_42">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Swift</string>
-        </property>
-       </widget>
-      </item>
-      <item row="16" column="1">
-       <widget class="QLabel" name="label_37">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
       <item row="17" column="1">
-       <widget class="QLabel" name="label_38">
+       <widget class="QLabel" name="label_VBAPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -114,23 +129,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="18" column="1">
-       <widget class="QLabel" name="label_40">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="18" column="0">
-       <widget class="QLabel" name="label_39">
+      <item row="17" column="0">
+       <widget class="QLabel" name="label_VBA">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -141,8 +141,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="16" column="0">
-       <widget class="QLabel" name="label_41">
+      <item row="15" column="0">
+       <widget class="QLabel" name="label_SQL">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -153,8 +153,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="15" column="1">
-       <widget class="QLabel" name="label_36">
+      <item row="16" column="1">
+       <widget class="QLabel" name="label_SwiftPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -168,8 +168,20 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="9" column="1">
-       <widget class="QLabel" name="label_29">
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_PHP">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>PHP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="label_PHPPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -184,7 +196,22 @@ border: none;</string>
        </widget>
       </item>
       <item row="10" column="1">
-       <widget class="QLabel" name="label_30">
+       <widget class="QLabel" name="label_PerlPoints">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="label_ObjectiveCPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -199,7 +226,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="10" column="0">
-       <widget class="QLabel" name="label_15">
+       <widget class="QLabel" name="label_Perl">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -210,20 +237,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="11" column="0">
-       <widget class="QLabel" name="label_16">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>PHP</string>
-        </property>
-       </widget>
-      </item>
-      <item row="11" column="1">
-       <widget class="QLabel" name="label_31">
+      <item row="13" column="1">
+       <widget class="QLabel" name="label_RPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -237,20 +252,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="12" column="0">
-       <widget class="QLabel" name="label_17">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Python</string>
-        </property>
-       </widget>
-      </item>
       <item row="12" column="1">
-       <widget class="QLabel" name="label_32">
+       <widget class="QLabel" name="label_PythonPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -265,7 +268,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="13" column="0">
-       <widget class="QLabel" name="label_18">
+       <widget class="QLabel" name="label_R">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -276,23 +279,20 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="13" column="1">
-       <widget class="QLabel" name="label_33">
+      <item row="12" column="0">
+       <widget class="QLabel" name="label_Python">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <string>Python</string>
         </property>
        </widget>
       </item>
       <item row="14" column="1">
-       <widget class="QLabel" name="label_34">
+       <widget class="QLabel" name="label_RubyPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -306,32 +306,35 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="14" column="0">
-       <widget class="QLabel" name="label_19">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_Assembler">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>Ruby on Rails</string>
+         <string>Assembler</string>
         </property>
        </widget>
       </item>
-      <item row="15" column="0">
-       <widget class="QLabel" name="label_35">
+      <item row="14" column="0">
+       <widget class="QLabel" name="label_Ruby">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>Scratch</string>
+         <string>Ruby</string>
         </property>
        </widget>
       </item>
       <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="pushButton_AssemblerPointsUp">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -346,47 +349,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Assembler</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_6">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>C</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLabel" name="label_21">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="1">
-       <widget class="QLabel" name="label_20">
+       <widget class="QLabel" name="label_AssemblerPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -401,7 +365,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QLabel" name="label_7">
+       <widget class="QLabel" name="label_CSharp">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -412,8 +376,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QLabel" name="label_22">
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_CPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -427,20 +391,50 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_8">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_C">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>C++</string>
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="label_CppPoints">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_CSharpPoints">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item row="4" column="0">
-       <widget class="QLabel" name="label_9">
+       <widget class="QLabel" name="label_Go">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -451,65 +445,20 @@ border: none;</string>
         </property>
        </widget>
       </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_Cpp">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>C++</string>
+        </property>
+       </widget>
+      </item>
       <item row="4" column="1">
-       <widget class="QLabel" name="label_24">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLabel" name="label_23">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="label_10">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Haskell</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QLabel" name="label_25">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>0</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="1">
-       <widget class="QLabel" name="label_26">
+       <widget class="QLabel" name="label_GoPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -524,7 +473,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="6" column="0">
-       <widget class="QLabel" name="label_11">
+       <widget class="QLabel" name="label_Java">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -535,20 +484,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="7" column="0">
-       <widget class="QLabel" name="label_12">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>JavaScript</string>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="1">
-       <widget class="QLabel" name="label_27">
+      <item row="6" column="1">
+       <widget class="QLabel" name="label_JavaPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -562,20 +499,35 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="label_13">
+      <item row="5" column="1">
+       <widget class="QLabel" name="label_HaskellPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>MatLab</string>
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
-      <item row="8" column="1">
-       <widget class="QLabel" name="label_28">
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_Haskell">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Haskell</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="label_JavaScriptPoints">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -590,7 +542,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="9" column="0">
-       <widget class="QLabel" name="label_14">
+       <widget class="QLabel" name="label_ObjectiveC">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -601,15 +553,13 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="19" column="0">
-       <widget class="QLabel" name="label_44">
-        <property name="text">
-         <string>Pozostało punktów</string>
+      <item row="8" column="1">
+       <widget class="QLabel" name="label_MatLabPoints">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
         </property>
-       </widget>
-      </item>
-      <item row="19" column="1">
-       <widget class="QLabel" name="label_43">
         <property name="text">
          <string>0</string>
         </property>
@@ -618,15 +568,72 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="19" column="2" colspan="2">
-       <widget class="QPushButton" name="pushButton_39">
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_JavaScript">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>JavaScript</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_MatLab">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>MatLab</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QLabel" name="label_OtherPoints">
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_CPointsUp">
+        <property name="styleSheet">
+         <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="2" colspan="2">
+       <widget class="QPushButton" name="pushButton_ResetAddedPoints">
         <property name="text">
          <string>Reset</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="pushButton_3">
+      <item row="18" column="0">
+       <widget class="QLabel" name="label_Others">
+        <property name="text">
+         <string>Pozostało punktów</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="pushButton_CppPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -642,23 +649,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QPushButton" name="pushButton_5">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="2">
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="pushButton_CSharpPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -674,7 +665,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="4" column="2">
-       <widget class="QPushButton" name="pushButton_9">
+       <widget class="QPushButton" name="pushButton_GoPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -690,7 +681,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="5" column="2">
-       <widget class="QPushButton" name="pushButton_11">
+       <widget class="QPushButton" name="pushButton_HaskellPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -706,7 +697,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="6" column="2">
-       <widget class="QPushButton" name="pushButton_13">
+       <widget class="QPushButton" name="pushButton_JavaPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -722,7 +713,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="7" column="2">
-       <widget class="QPushButton" name="pushButton_15">
+       <widget class="QPushButton" name="pushButton_JavaScriptsPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -738,23 +729,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="8" column="2">
-       <widget class="QPushButton" name="pushButton_17">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="9" column="2">
-       <widget class="QPushButton" name="pushButton_19">
+       <widget class="QPushButton" name="pushButton_MatLabPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -770,23 +745,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="10" column="2">
-       <widget class="QPushButton" name="pushButton_41">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="11" column="2">
-       <widget class="QPushButton" name="pushButton_21">
+       <widget class="QPushButton" name="pushButton_PerlPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -802,7 +761,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="12" column="2">
-       <widget class="QPushButton" name="pushButton_23">
+       <widget class="QPushButton" name="pushButton_PythonPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -817,8 +776,24 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="13" column="2">
-       <widget class="QPushButton" name="pushButton_25">
+      <item row="9" column="2">
+       <widget class="QPushButton" name="pushButton_ObjectiveCPointsUp">
+        <property name="styleSheet">
+         <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QPushButton" name="pushButton_PHPPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -834,7 +809,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="14" column="2">
-       <widget class="QPushButton" name="pushButton_27">
+       <widget class="QPushButton" name="pushButton_RubyPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -849,56 +824,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="15" column="2">
-       <widget class="QPushButton" name="pushButton_29">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="16" column="2">
-       <widget class="QPushButton" name="pushButton_31">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="17" column="2">
-       <widget class="QPushButton" name="pushButton_33">
-        <property name="styleSheet">
-         <string notr="true">background: none;
-background-color: transparent;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="18" column="2">
-       <widget class="QPushButton" name="pushButton_35">
+      <item row="13" column="2">
+       <widget class="QPushButton" name="pushButton_RPointsUp">
         <property name="styleSheet">
          <string notr="true">background: none;
 background-color: transparent;
@@ -914,7 +841,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="1" column="3">
-       <widget class="QPushButton" name="pushButton_37">
+       <widget class="QPushButton" name="pushButton_CPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -929,8 +856,56 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="3">
-       <widget class="QPushButton" name="pushButton_4">
+      <item row="15" column="2">
+       <widget class="QPushButton" name="pushButton_SQLPointsUp">
+        <property name="styleSheet">
+         <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="2">
+       <widget class="QPushButton" name="pushButton_SwiftPointsUp">
+        <property name="styleSheet">
+         <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="2">
+       <widget class="QPushButton" name="pushButton_VBAPointsUp">
+        <property name="styleSheet">
+         <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/upload.png</normaloff>:/images/images/upload.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="pushButton_GoPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -946,7 +921,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="3" column="3">
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="pushButton_CppPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -961,24 +936,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="3">
-       <widget class="QPushButton" name="pushButton_8">
-        <property name="styleSheet">
-         <string notr="true">background-color: transparent;
-background: none;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/down.png</normaloff>:/images/images/down.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="3">
-       <widget class="QPushButton" name="pushButton_10">
+      <item row="2" column="3">
+       <widget class="QPushButton" name="pushButton_CSharpPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -994,23 +953,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="6" column="3">
-       <widget class="QPushButton" name="pushButton_12">
-        <property name="styleSheet">
-         <string notr="true">background-color: transparent;
-background: none;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/down.png</normaloff>:/images/images/down.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="7" column="3">
-       <widget class="QPushButton" name="pushButton_14">
+       <widget class="QPushButton" name="pushButton_JavaPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1026,7 +969,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="8" column="3">
-       <widget class="QPushButton" name="pushButton_16">
+       <widget class="QPushButton" name="pushButton_MatLabPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1041,8 +984,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="9" column="3">
-       <widget class="QPushButton" name="pushButton_18">
+      <item row="7" column="3">
+       <widget class="QPushButton" name="pushButton_JavaScriptPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1057,8 +1000,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="10" column="3">
-       <widget class="QPushButton" name="pushButton_20">
+      <item row="5" column="3">
+       <widget class="QPushButton" name="pushButton_HaskellPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1074,7 +1017,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="11" column="3">
-       <widget class="QPushButton" name="pushButton_22">
+       <widget class="QPushButton" name="pushButton_PHPPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1090,7 +1033,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="12" column="3">
-       <widget class="QPushButton" name="pushButton_24">
+       <widget class="QPushButton" name="pushButton_PythonPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1105,8 +1048,24 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="13" column="3">
-       <widget class="QPushButton" name="pushButton_26">
+      <item row="9" column="3">
+       <widget class="QPushButton" name="pushButton_ObjectiveCPointsDown">
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;
+background: none;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/down.png</normaloff>:/images/images/down.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="3">
+       <widget class="QPushButton" name="pushButton_PerlPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1122,7 +1081,23 @@ border: none;</string>
        </widget>
       </item>
       <item row="14" column="3">
-       <widget class="QPushButton" name="pushButton_28">
+       <widget class="QPushButton" name="pushButton_RubyPointsDown">
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;
+background: none;
+border: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/images/down.png</normaloff>:/images/images/down.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="3">
+       <widget class="QPushButton" name="pushButton_RPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1138,23 +1113,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="15" column="3">
-       <widget class="QPushButton" name="pushButton_30">
-        <property name="styleSheet">
-         <string notr="true">background-color: transparent;
-background: none;
-border: none;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/images/down.png</normaloff>:/images/images/down.png</iconset>
-        </property>
-       </widget>
-      </item>
-      <item row="16" column="3">
-       <widget class="QPushButton" name="pushButton_32">
+       <widget class="QPushButton" name="pushButton_SQLPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1170,7 +1129,7 @@ border: none;</string>
        </widget>
       </item>
       <item row="17" column="3">
-       <widget class="QPushButton" name="pushButton_34">
+       <widget class="QPushButton" name="pushButton_VBAPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1185,8 +1144,8 @@ border: none;</string>
         </property>
        </widget>
       </item>
-      <item row="18" column="3">
-       <widget class="QPushButton" name="pushButton_36">
+      <item row="16" column="3">
+       <widget class="QPushButton" name="pushButton_SwiftPointsDown">
         <property name="styleSheet">
          <string notr="true">background-color: transparent;
 background: none;
@@ -1204,20 +1163,8 @@ border: none;</string>
      </layout>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_4">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Charakter</string>
-     </property>
-    </widget>
-   </item>
    <item row="3" column="0">
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="label_NameAndSurname">
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -1229,12 +1176,14 @@ border: none;</string>
     </widget>
    </item>
    <item row="3" column="1" colspan="3">
-    <widget class="QLineEdit" name="lineEdit"/>
+    <widget class="QLineEdit" name="lineEdit_Name"/>
    </item>
    <item row="4" column="2">
-    <widget class="QPushButton" name="pushButton_38">
+    <widget class="QPushButton" name="pushButton_TalentLevelUp">
      <property name="styleSheet">
-      <string notr="true">QPushButton: { background-color: rgba(85, 170, 255, 0)};</string>
+      <string notr="true">background: none;
+background-color: transparent;
+border: none;</string>
      </property>
      <property name="text">
       <string/>
@@ -1245,8 +1194,20 @@ border: none;</string>
      </property>
     </widget>
    </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_Character">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Charakter</string>
+     </property>
+    </widget>
+   </item>
    <item row="4" column="1">
-    <widget class="QLabel" name="label_45">
+    <widget class="QLabel" name="label_TalentLevelStars">
      <property name="maximumSize">
       <size>
        <width>164</width>
@@ -1272,6 +1233,31 @@ border: none;</string>
      </property>
     </widget>
    </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label_CharacterValue">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
    <item row="9" column="0">
     <spacer name="verticalSpacer">
      <property name="orientation">
@@ -1286,7 +1272,7 @@ border: none;</string>
     </spacer>
    </item>
    <item row="4" column="0">
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="label_Talent">
      <property name="font">
       <font>
        <pointsize>10</pointsize>
@@ -1297,32 +1283,7 @@ border: none;</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
-    <widget class="QLabel" name="label_46">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="9" column="1" colspan="3">
+   <item row="9" column="1" colspan="2">
     <spacer name="horizontalSpacer_3">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -1335,10 +1296,10 @@ border: none;</string>
      </property>
     </spacer>
    </item>
-   <item row="8" column="1" colspan="3">
-    <widget class="QGroupBox" name="groupBox">
-     <property name="title">
-      <string>Opis</string>
+   <item row="9" column="3">
+    <widget class="QPushButton" name="pushButton_Next">
+     <property name="text">
+      <string>Dalej</string>
      </property>
     </widget>
    </item>

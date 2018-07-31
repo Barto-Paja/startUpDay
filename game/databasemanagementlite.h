@@ -8,11 +8,15 @@
 #include <QString>
 #include <QSqlError>
 #include <QDate>
+#include <QCoreApplication>
 
 class DataBaseManagementLite
 {
 public:
     DataBaseManagementLite();
+
+private:
+    static QSqlDatabase db;
 };
 
 #endif // DATABASEMANAGEMENTLITE_H

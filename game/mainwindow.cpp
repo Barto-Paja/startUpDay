@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "databasemanagementlite.h"
+
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -10,6 +12,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
 
+    NewGameForm ngf;
+    QWidget *pageWidget = new NewGameForm();
+    ui->stackedWidget->insertWidget(FormIDNewGame,pageWidget);
+    connect(pageWidget,SIGNAL(exitPanel()), this, SLOT(exitNewGamePanel()));
+
+    pageWidget = new FormSetIcon();
+    ui->stackedWidget->insertWidget(FormIDSetIcon,pageWidget);
 
     qDebug() << this->size();
     //ui->pushButton->setText(QString(this->size()));
@@ -20,23 +29,51 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::drawBackground()
+void MainWindow::drawBackground(QPixmap &bck)
 {
-    QPixmap bkgnd(":/images/franck-v-628397-unsplash.jpg");
-    bkgnd = bkgnd.scaled(this->size() , Qt::IgnoreAspectRatio);
+
+    bck = bck.scaled(this->size() , Qt::IgnoreAspectRatio);
     QPalette palette;
-    palette.setBrush(QPalette::Background, bkgnd);
+    palette.setBrush(QPalette::Background, bck);
     this->setPalette(palette);
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_pushButton_NewGame_clicked()
 {
-    NewGameForm *form = new NewGameForm;
-    form->show();
+    QPixmap bck(":/images/images/backgrounds/rawpixel-653764-unsplash.jpg");
+    drawBackground(bck);
+    ui->stackedWidget->setCurrentIndex(FormIDNewGame);
+    this->update();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_LoadGame_clicked()
 {
-    //ui->stackedWidget->setCurrentIndex(2);
-    ui->tabWidget->setCurrentIndex(2);
+
+}
+
+void MainWindow::on_pushButton_MultiPlayer_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_About_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_Exit_clicked()
+{
+    this->close();
+}
+
+void MainWindow::switchPanel()
+{
+    //ui->stackedWidget->setCurrentIndex(enumdef);
+    this->update();
+}
+
+void MainWindow::exitNewGamePanel()
+{
+    ui->stackedWidget->setCurrentIndex(FormIDSetIcon);
+    this->update();
 }

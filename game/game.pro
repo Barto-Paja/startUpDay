@@ -34,7 +34,13 @@ SOURCES += \
     formgamestates.cpp \
     formskilltree.cpp \
     formarena.cpp \
-    databasemanagementlite.cpp
+    databasemanagementlite.cpp \
+    gamestates.cpp \
+    formseticon.cpp \
+    fight\mechanismfight.cpp \
+    fight/hpmanagement.cpp \
+    fight/damagemanagement.cpp \
+    formnewrobot.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +52,14 @@ HEADERS += \
     formgamestates.h \
     formskilltree.h \
     formarena.h \
-    databasemanagementlite.h
+    databasemanagementlite.h \
+    gamestates.h \
+    formseticon.h \
+    fight\mechanismfight.h \
+    fight/hpmanagement.h \
+    fight/damagemanagement.h \
+    formsstackmanagement.h \
+    formnewrobot.h
 
 FORMS += \
         mainwindow.ui \
@@ -55,7 +68,9 @@ FORMS += \
     formrobot.ui \
     formgamestates.ui \
     formskilltree.ui \
-    formarena.ui
+    formarena.ui \
+    formseticon.ui \
+    formnewrobot.ui
 
 DISTFILES +=
 
