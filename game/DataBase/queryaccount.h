@@ -13,7 +13,7 @@ public:
     bool login(QString &login, QString &password);
 
 private:
-    QSqlQuery *query;
+
 };
 
 #endif // QUERYACCOUNT_H

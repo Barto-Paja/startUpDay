@@ -80,6 +80,8 @@ void MainWindow::exitNewGamePanel()
 
 void MainWindow::on_pushButton_Connect_clicked()
 {
+    qua->open();
+
     QString login(ui->lineEdit_Login->text());
     QString password(ui->lineEdit_Password->text());
 

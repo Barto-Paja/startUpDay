@@ -14,7 +14,6 @@ public:
 
 private:
 
-    QSqlQuery *query;
 };
 
 #endif // QUERYCHARACTER_H

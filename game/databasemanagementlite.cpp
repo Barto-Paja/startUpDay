@@ -1,16 +1,11 @@
 #include "databasemanagementlite.h"
 
-QSqlDatabase DataBaseManagementLite::db = QSqlDatabase::addDatabase("QOCI");
+QSqlDatabase DataBaseManagementLite::db = QSqlDatabase::addDatabase("QSQLITE");
 int DataBaseManagementLite::login = 0;
 
 DataBaseManagementLite::DataBaseManagementLite()
 {
     db.setDatabaseName(QString(QCoreApplication::applicationDirPath()+"/test.db"));
-    db.isOpen();
-    if(!db.isOpen()){
-        db.open();
-    }
-    //qDebug() << db.open();
 }
 
 QSqlDatabase DataBaseManagementLite::getDataBase()
