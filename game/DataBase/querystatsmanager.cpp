@@ -4,28 +4,35 @@
 
 QueryStatsManager::QueryStatsManager()
 {
-
+    query  = new QSqlQuery(db);
 }
 
 QueryStatsManager::~QueryStatsManager()
 {
-
+    delete query;
 }
 
 bool QueryStatsManager::getStat()
 {
 
-//    query->prepare("SELECT * FROM STATISTICS WHERE ID_CHARACTER = :charId");
-//    query->bindValue(":charId",DataBaseManagementLite::getLogin());
+    if(!open()){
+        return false;
+    }
 
-//    if(query->exec() && query->next()){
-//       return true;
-//    }
-//    else
-//        return false;
+    query->prepare("SELECT * FROM STATISTICS WHERE ID_CHARACHTER = :charId");
+    query->bindValue(":charId",getLogin());
+
+    if(query->exec() && query->next()){
+       return true;
+    }
+    else{
+        qDebug() << query->lastError();
+        return false;
+    }
+
 }
 
 int QueryStatsManager::showStat(int columnValue)
 {
-//    return query->value(std::move(columnValue)).toInt();
+    return query->value(std::move(columnValue)).toInt();
 }

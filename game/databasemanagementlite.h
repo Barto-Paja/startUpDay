@@ -15,7 +15,7 @@ class DataBaseManagementLite
 public:
     DataBaseManagementLite();
     static QSqlDatabase getDataBase();
-    static int getLogin();
+    static  int getLogin();
     static void setID(int id){login=std::move(id);}
     bool open();
 

@@ -22,7 +22,7 @@ signals:
 
 protected:
 
-    void showEvent(QEvent *event);
+    void showEvent(QShowEvent *event);
 
 private slots:
 
@@ -75,6 +75,9 @@ private:
     Character *player;
 
     void loadLanguages();
+    void getPointFromOthers();
+    void putPointOnOthers();
+    bool isLeftPoint();
 };
 
 #endif // NEWGAMEFORM_H

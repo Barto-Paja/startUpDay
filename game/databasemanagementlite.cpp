@@ -13,7 +13,7 @@ QSqlDatabase DataBaseManagementLite::getDataBase()
     return db;
 }
 
-int DataBaseManagementLite::getLogin()
+ int DataBaseManagementLite::getLogin()
 {
     return login;
 }
@@ -22,13 +22,11 @@ bool DataBaseManagementLite::open()
 {
     if(db.isOpen()){
         return true;
-        qDebug() << "Tu";
     }
     else{
 
         if(db.open()){
             return true;
-            qDebug() << "Tuu";
         }
         else
             return false;

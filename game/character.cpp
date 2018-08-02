@@ -3,7 +3,6 @@
 Character::Character()
 {
    queryManager = new QueryStatsManager();
-   queryManager->getStat();
 }
 
 Character::~Character()
@@ -48,6 +47,6 @@ void Character::setSalary()
 
 int Character::getStat(Language_t type)
 {
-    qDebug() << queryManager->open();
+    queryManager->getStat();
     return queryManager->showStat(type);
 }
