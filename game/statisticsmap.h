@@ -20,7 +20,8 @@ typedef enum {
     LanguageSQL,
     LanguageSwift,
     LanguageVBA,
-    LanguageOthers
+    LanguageOthers,
+    LanguageTalent
 }Language_t;
 
 #endif // STATISTICSMAP_H

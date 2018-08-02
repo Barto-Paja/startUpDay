@@ -2,7 +2,7 @@
 #define QUERYCHARACTER_H
 
 #include "databasemanagementlite.h"
-#include "character.h"
+#include "charactersmap.h"
 
 #include <QSqlQuery>
 
@@ -10,10 +10,14 @@ class QueryCharacter : public DataBaseManagementLite
 {
 public:
     QueryCharacter();
-    void loadPlayerStatistics(Character &ch);
+    ~QueryCharacter();
+    void loadPlayerStatistics();
+    void setPersonality(Character_t character);
+    QString getPersonalityName(Character_t character);
 
 private:
 
+    QSqlQuery *query;
 };
 
 #endif // QUERYCHARACTER_H

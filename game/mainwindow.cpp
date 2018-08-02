@@ -19,6 +19,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     pageWidget = new FormSetIcon();
     ui->stackedWidget->insertWidget(FormIDSetIcon,pageWidget);
+    connect(pageWidget,SIGNAL(exitPanel()),this,SLOT(exitSetIconPanel()));
+
+    pageWidget = new FormNewRobot();
+    ui->stackedWidget->insertWidget(FormIDNewRobot,pageWidget);
+
 
     qDebug() << this->size();
     //ui->pushButton->setText(QString(this->size()));
@@ -75,6 +80,14 @@ void MainWindow::switchPanel()
 void MainWindow::exitNewGamePanel()
 {
     ui->stackedWidget->setCurrentIndex(FormIDSetIcon);
+    this->update();
+}
+
+void MainWindow::exitSetIconPanel()
+{
+    QPixmap bck(":/images/images/backgrounds/max-larochelle-443117-unsplash.jpg");
+    drawBackground(bck);
+    ui->stackedWidget->setCurrentIndex(FormIDNewRobot);
     this->update();
 }
 

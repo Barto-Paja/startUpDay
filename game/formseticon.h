@@ -15,6 +15,12 @@ public:
     explicit FormSetIcon(QWidget *parent = 0);
     ~FormSetIcon();
 
+signals:
+    void exitPanel();
+
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::FormSetIcon *ui;
 };

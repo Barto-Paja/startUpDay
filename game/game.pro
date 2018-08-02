@@ -66,7 +66,8 @@ HEADERS += \
     DataBase/queryaccount.h \
     DataBase/querystatsmanager.h \
     DataBase/querycharacter.h \
-    statisticsmap.h
+    statisticsmap.h \
+    charactersmap.h
 
 FORMS += \
         mainwindow.ui \

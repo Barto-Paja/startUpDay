@@ -20,11 +20,35 @@ NewGameForm::~NewGameForm()
 
 void NewGameForm::showEvent(QShowEvent *event)
 {
-    loadLanguages();
+   loadLanguages();
+   auto  person = static_cast<Character_t>(rand() % CharacterLast);
+   ui->label_CharacterValue->setText(player->getPersonalityName(person));
 }
 
 void NewGameForm::on_pushButton_Next_clicked()
 {
+    player->setStats(ui->label_AssemblerPoints->text().toInt());
+    player->setStats(ui->label_CPoints->text().toInt());
+    player->setStats(ui->label_CSharpPoints->text().toInt());
+    player->setStats(ui->label_CppPoints->text().toInt());
+    player->setStats(ui->label_GoPoints->text().toInt());
+    player->setStats(ui->label_HaskellPoints->text().toInt());
+    player->setStats(ui->label_JavaPoints->text().toInt());
+    player->setStats(ui->label_JavaScriptPoints->text().toInt());
+    player->setStats(ui->label_MatLabPoints->text().toInt());
+    player->setStats(ui->label_ObjectiveCPoints->text().toInt());
+    player->setStats(ui->label_PerlPoints->text().toInt());
+    player->setStats(ui->label_PHPPoints->text().toInt());
+    player->setStats(ui->label_PythonPoints->text().toInt());
+    player->setStats(ui->label_RPoints->text().toInt());
+    player->setStats(ui->label_RubyPoints->text().toInt());
+    player->setStats(ui->label_SQLPoints->text().toInt());
+    player->setStats(ui->label_SwiftPoints->text().toInt());
+    player->setStats(ui->label_VBAPoints->text().toInt());
+    player->setStats(ui->label_OtherPoints->text().toInt());
+    player->setStats(tempTalent);
+    player->sendNewStats();
+
     emit exitPanel();
 }
 
@@ -66,7 +90,14 @@ void NewGameForm::on_pushButton_CPointsUp_clicked()
 
 void NewGameForm::on_pushButton_CPointsDown_clicked()
 {
+    int i = ui->label_CPoints->text().toInt();
+    if(i<=player->getStat(LanguageC)){
+        return;
+    }
 
+    --i;
+    ui->label_CPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_CSharpPointsUp_clicked()
@@ -83,7 +114,14 @@ void NewGameForm::on_pushButton_CSharpPointsUp_clicked()
 
 void NewGameForm::on_pushButton_CSharpPointsDown_clicked()
 {
+    int i = ui->label_CSharpPoints->text().toInt();
+    if(i<=player->getStat(LanguageCsharp)){
+        return;
+    }
 
+    --i;
+    ui->label_CSharpPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_CppPointsUp_clicked()
@@ -100,7 +138,14 @@ void NewGameForm::on_pushButton_CppPointsUp_clicked()
 
 void NewGameForm::on_pushButton_CppPointsDown_clicked()
 {
+    int i = ui->label_CppPoints->text().toInt();
+    if(i<=player->getStat(LanguageCpp)){
+        return;
+    }
 
+    --i;
+    ui->label_CppPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_GoPointsUp_clicked()
@@ -117,7 +162,14 @@ void NewGameForm::on_pushButton_GoPointsUp_clicked()
 
 void NewGameForm::on_pushButton_GoPointsDown_clicked()
 {
+    int i = ui->label_GoPoints->text().toInt();
+    if(i<=player->getStat(LanguageGoLang)){
+        return;
+    }
 
+    --i;
+    ui->label_GoPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_HaskellPointsUp_clicked()
@@ -134,7 +186,14 @@ void NewGameForm::on_pushButton_HaskellPointsUp_clicked()
 
 void NewGameForm::on_pushButton_HaskellPointsDown_clicked()
 {
+    int i = ui->label_HaskellPoints->text().toInt();
+    if(i<=player->getStat(LanguageHaskell)){
+        return;
+    }
 
+    --i;
+    ui->label_HaskellPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_JavaPointsUp_clicked()
@@ -151,7 +210,14 @@ void NewGameForm::on_pushButton_JavaPointsUp_clicked()
 
 void NewGameForm::on_pushButton_JavaPointsDown_clicked()
 {
+    int i = ui->label_JavaPoints->text().toInt();
+    if(i<=player->getStat(LanguageJava)){
+        return;
+    }
 
+    --i;
+    ui->label_JavaPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_JavaScriptsPointsUp_clicked()
@@ -168,7 +234,14 @@ void NewGameForm::on_pushButton_JavaScriptsPointsUp_clicked()
 
 void NewGameForm::on_pushButton_JavaScriptPointsDown_clicked()
 {
+    int i = ui->label_JavaScriptPoints->text().toInt();
+    if(i<=player->getStat(LanguageJavaScript)){
+        return;
+    }
 
+    --i;
+    ui->label_JavaScriptPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_MatLabPointsUp_clicked()
@@ -185,7 +258,14 @@ void NewGameForm::on_pushButton_MatLabPointsUp_clicked()
 
 void NewGameForm::on_pushButton_MatLabPointsDown_clicked()
 {
+    int i = ui->label_MatLabPoints->text().toInt();
+    if(i<=player->getStat(LanguageMatLab)){
+        return;
+    }
 
+    --i;
+    ui->label_MatLabPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_ObjectiveCPointsUp_clicked()
@@ -202,7 +282,14 @@ void NewGameForm::on_pushButton_ObjectiveCPointsUp_clicked()
 
 void NewGameForm::on_pushButton_ObjectiveCPointsDown_clicked()
 {
+    int i = ui->label_ObjectiveCPoints->text().toInt();
+    if(i<=player->getStat(LanguageObjectiveC)){
+        return;
+    }
 
+    --i;
+    ui->label_ObjectiveCPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_PerlPointsUp_clicked()
@@ -219,7 +306,14 @@ void NewGameForm::on_pushButton_PerlPointsUp_clicked()
 
 void NewGameForm::on_pushButton_PerlPointsDown_clicked()
 {
+    int i = ui->label_PerlPoints->text().toInt();
+    if(i<=player->getStat(LanguagePerl)){
+        return;
+    }
 
+    --i;
+    ui->label_PerlPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_PHPPointsUp_clicked()
@@ -236,7 +330,14 @@ void NewGameForm::on_pushButton_PHPPointsUp_clicked()
 
 void NewGameForm::on_pushButton_PHPPointsDown_clicked()
 {
+    int i = ui->label_PHPPoints->text().toInt();
+    if(i<=player->getStat(LanguagePHP)){
+        return;
+    }
 
+    --i;
+    ui->label_PHPPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_PythonPointsUp_clicked()
@@ -253,7 +354,14 @@ void NewGameForm::on_pushButton_PythonPointsUp_clicked()
 
 void NewGameForm::on_pushButton_PythonPointsDown_clicked()
 {
+    int i = ui->label_PythonPoints->text().toInt();
+    if(i<=player->getStat(LanguagePython)){
+        return;
+    }
 
+    --i;
+    ui->label_PythonPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_RPointsUp_clicked()
@@ -270,7 +378,14 @@ void NewGameForm::on_pushButton_RPointsUp_clicked()
 
 void NewGameForm::on_pushButton_RPointsDown_clicked()
 {
+    int i = ui->label_RPoints->text().toInt();
+    if(i<=player->getStat(LanguageR)){
+        return;
+    }
 
+    --i;
+    ui->label_RPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_RubyPointsUp_clicked()
@@ -287,7 +402,14 @@ void NewGameForm::on_pushButton_RubyPointsUp_clicked()
 
 void NewGameForm::on_pushButton_RubyPointsDown_clicked()
 {
+    int i = ui->label_RubyPoints->text().toInt();
+    if(i<=player->getStat(LanguageRuby)){
+        return;
+    }
 
+    --i;
+    ui->label_RubyPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_SQLPointsUp_clicked()
@@ -304,7 +426,14 @@ void NewGameForm::on_pushButton_SQLPointsUp_clicked()
 
 void NewGameForm::on_pushButton_SQLPointsDown_clicked()
 {
+    int i = ui->label_SQLPoints->text().toInt();
+    if(i<=player->getStat(LanguageSQL)){
+        return;
+    }
 
+    --i;
+    ui->label_SQLPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_SwiftPointsUp_clicked()
@@ -321,7 +450,14 @@ void NewGameForm::on_pushButton_SwiftPointsUp_clicked()
 
 void NewGameForm::on_pushButton_SwiftPointsDown_clicked()
 {
+    int i = ui->label_SwiftPoints->text().toInt();
+    if(i<=player->getStat(LanguageSwift)){
+        return;
+    }
 
+    --i;
+    ui->label_SwiftPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_VBAPointsUp_clicked()
@@ -338,7 +474,14 @@ void NewGameForm::on_pushButton_VBAPointsUp_clicked()
 
 void NewGameForm::on_pushButton_VBAPointsDown_clicked()
 {
+    int i = ui->label_VBAPoints->text().toInt();
+    if(i<=player->getStat(LanguageVBA)){
+        return;
+    }
 
+    --i;
+    ui->label_VBAPoints->setText(QString::number(i));
+    putPointOnOthers();
 }
 
 void NewGameForm::on_pushButton_TalentLevelUp_clicked()
@@ -347,16 +490,97 @@ void NewGameForm::on_pushButton_TalentLevelUp_clicked()
         return;
     }
 
+    switch (tempTalent) {
+    case 1:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars2.png"));
+        break;
+    }
+    case 2:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars3.png"));
+        break;
+    }
+    case 3:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars4.png"));
+        break;
+    }
+    case 4:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars5.png"));
+        break;
+    }
+    case 5:break;
+    default:break;
+    }
+
+    if(tempTalent<5){
+        int i = ui->label_OtherPoints->text().toInt();
+        i=(i-20);
+        ui->label_OtherPoints->setText(QString::number(i));
+        ++tempTalent;
+    }
 }
 
 void NewGameForm::on_pushButton_TalentLevelDown_clicked()
 {
+    if(tempTalent==player->getStat(LanguageTalent)){
+        return;
+    }
 
+    switch (tempTalent) {
+    case 1:break;
+    case 2:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars1.png"));
+        break;
+    }
+    case 3:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars2.png"));
+        break;
+    }
+    case 4:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars3.png"));
+        break;
+    }
+    case 5:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars4.png"));
+        break;
+    }
+    default:break;
+    }
+
+    if(tempTalent>1){
+        int i = ui->label_OtherPoints->text().toInt();
+        i=(i+20);
+        ui->label_OtherPoints->setText(QString::number(i));
+        --tempTalent;
+    }
 }
 
 void NewGameForm::on_pushButton_ResetAddedPoints_clicked()
 {
     loadLanguages();
+
+    switch (tempTalent) {
+    case 1:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars1.png"));
+        break;
+    }
+    case 2:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars2.png"));
+        break;
+    }
+    case 3:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars3.png"));
+        break;
+    }
+    case 4:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars4.png"));
+        break;
+    }
+    case 5:{
+        ui->label_TalentLevelStars->setPixmap(QString(":/images/images/stars5.png"));
+        break;
+    }
+    default:break;
+    }
 }
 
 void NewGameForm::loadLanguages()
@@ -380,6 +604,8 @@ void NewGameForm::loadLanguages()
     ui->label_SwiftPoints->setText(QString::number(player->getStat(LanguageSwift)));
     ui->label_VBAPoints->setText(QString::number(player->getStat(LanguageVBA)));
     ui->label_OtherPoints->setText(QString::number(player->getStat(LanguageOthers)));
+
+    tempTalent = player->getStat(LanguageTalent);
 }
 
 void NewGameForm::getPointFromOthers()

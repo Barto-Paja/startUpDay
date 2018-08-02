@@ -21,3 +21,8 @@ FormSetIcon::~FormSetIcon()
 {
     delete ui;
 }
+
+void FormSetIcon::on_pushButton_clicked()
+{
+    emit exitPanel();
+}

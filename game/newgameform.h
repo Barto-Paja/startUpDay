@@ -74,6 +74,8 @@ private:
     Ui::NewGameForm *ui;
     Character *player;
 
+    int tempTalent;
+
     void loadLanguages();
     void getPointFromOthers();
     void putPointOnOthers();
