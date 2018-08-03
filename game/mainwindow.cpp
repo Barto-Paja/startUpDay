@@ -85,7 +85,7 @@ void MainWindow::exitNewGamePanel()
 
 void MainWindow::exitSetIconPanel()
 {
-    QPixmap bck(":/images/images/backgrounds/max-larochelle-443117-unsplash.jpg");
+    QPixmap bck(":/images/images/backgrounds/pete-wright-105201-unsplash.jpg");
     drawBackground(bck);
     ui->stackedWidget->setCurrentIndex(FormIDNewRobot);
     this->update();
