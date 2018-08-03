@@ -14,9 +14,19 @@ class DataBaseManagementLite
 {
 public:
     DataBaseManagementLite();
+    static QSqlDatabase getDataBase();
+    static  int getLogin();
+    static void setID(int id){login=std::move(id);}
+    bool open();
+
+    friend class QueryAccount;
+    friend class QueryCharacter;
+    friend class QueryStatsManager;
 
 private:
     static QSqlDatabase db;
+    static int login;
+    //QSqlQuery *query;
 };
 
 #endif // DATABASEMANAGEMENTLITE_H

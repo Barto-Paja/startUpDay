@@ -40,7 +40,10 @@ SOURCES += \
     fight\mechanismfight.cpp \
     fight/hpmanagement.cpp \
     fight/damagemanagement.cpp \
-    formnewrobot.cpp
+    formnewrobot.cpp \
+    DataBase/queryaccount.cpp \
+    DataBase/querystatsmanager.cpp \
+    DataBase/querycharacter.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -59,7 +62,12 @@ HEADERS += \
     fight/hpmanagement.h \
     fight/damagemanagement.h \
     formsstackmanagement.h \
-    formnewrobot.h
+    formnewrobot.h \
+    DataBase/queryaccount.h \
+    DataBase/querystatsmanager.h \
+    DataBase/querycharacter.h \
+    statisticsmap.h \
+    charactersmap.h
 
 FORMS += \
         mainwindow.ui \

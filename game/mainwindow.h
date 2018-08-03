@@ -9,6 +9,9 @@
 #include "formrobot.h"
 #include "newgameform.h"
 #include "formarena.h"
+#include "formnewrobot.h"
+
+#include "DataBase/queryaccount.h"
 
 namespace Ui {
 class MainWindow;
@@ -33,9 +36,13 @@ private slots:
 
     void switchPanel();
     void exitNewGamePanel();
+    void exitSetIconPanel();
+
+    void on_pushButton_Connect_clicked();
 
 private:
     Ui::MainWindow *ui;
+    QueryAccount *qua;
 };
 
 #endif // MAINWINDOW_H

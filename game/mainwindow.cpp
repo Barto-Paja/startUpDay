@@ -11,14 +11,19 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    qua = new QueryAccount();
 
-    NewGameForm ngf;
     QWidget *pageWidget = new NewGameForm();
     ui->stackedWidget->insertWidget(FormIDNewGame,pageWidget);
     connect(pageWidget,SIGNAL(exitPanel()), this, SLOT(exitNewGamePanel()));
 
     pageWidget = new FormSetIcon();
     ui->stackedWidget->insertWidget(FormIDSetIcon,pageWidget);
+    connect(pageWidget,SIGNAL(exitPanel()),this,SLOT(exitSetIconPanel()));
+
+    pageWidget = new FormNewRobot();
+    ui->stackedWidget->insertWidget(FormIDNewRobot,pageWidget);
+
 
     qDebug() << this->size();
     //ui->pushButton->setText(QString(this->size()));
@@ -76,4 +81,25 @@ void MainWindow::exitNewGamePanel()
 {
     ui->stackedWidget->setCurrentIndex(FormIDSetIcon);
     this->update();
+}
+
+void MainWindow::exitSetIconPanel()
+{
+    QPixmap bck(":/images/images/backgrounds/max-larochelle-443117-unsplash.jpg");
+    drawBackground(bck);
+    ui->stackedWidget->setCurrentIndex(FormIDNewRobot);
+    this->update();
+}
+
+void MainWindow::on_pushButton_Connect_clicked()
+{
+    qua->open();
+
+    QString login(ui->lineEdit_Login->text());
+    QString password(ui->lineEdit_Password->text());
+
+    if(qua->login(login,password)){
+        ui->label_LoginMessage->setText("Zalogowano pomyślnie!");
+    }else
+        ui->label_LoginMessage->setText("Błąd podczas logowania");
 }
