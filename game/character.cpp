@@ -68,3 +68,13 @@ QString Character::getPersonalityName(Character_t type)
 {
     return queryChar->getPersonalityName(std::move(type));
 }
+
+void Character::setName(QString name)
+{
+    queryChar->updateNickName(name);
+}
+
+QString Character::getName()
+{
+    return queryChar->showNickName();
+}

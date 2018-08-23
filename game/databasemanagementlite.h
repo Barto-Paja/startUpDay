@@ -10,6 +10,8 @@
 #include <QDate>
 #include <QCoreApplication>
 
+#include "DataBase/columns.h"
+
 class DataBaseManagementLite
 {
 public:
@@ -17,16 +19,18 @@ public:
     static QSqlDatabase getDataBase();
     static  int getLogin();
     static void setID(int id){login=std::move(id);}
-    bool open();
+    static bool open();
 
     friend class QueryAccount;
     friend class QueryCharacter;
     friend class QueryStatsManager;
 
+    static QSqlQuery query;
+
 private:
     static QSqlDatabase db;
     static int login;
-    //QSqlQuery *query;
+
 };
 
 #endif // DATABASEMANAGEMENTLITE_H

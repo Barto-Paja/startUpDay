@@ -1,8 +1,11 @@
 #include "querycharacter.h"
 
+QString QueryCharacter::nickName = "";
+
 QueryCharacter::QueryCharacter()
 {
     query = new QSqlQuery(db);
+    //getnickName();
 }
 
 QueryCharacter::~QueryCharacter()
@@ -55,4 +58,42 @@ QString QueryCharacter::getPersonalityName(Character_t character)
         return QString("Eror");
 
 
+}
+
+void QueryCharacter::updateNickName(QString &name)
+{
+    query->prepare("UPDATE CHARACHTER SET NAME = :name WHERE ID = :idPlayer");
+    query->bindValue(":name",name);
+    query->bindValue(":idPlayer",getLogin());
+
+    if(query->exec()){
+        setNickName(name);
+        qDebug() << showNickName();
+        return;
+    }
+    else{
+        qDebug() << query->lastError();
+        return;
+    }
+
+}
+
+QString QueryCharacter::getnickName()
+{
+    query->prepare("SELECT NAME FROM CHARACTER WHERE ID = :idPlayer LIMIT 1");
+    query->bindValue(":idPlayer",getLogin());
+
+
+
+    if(query->exec() && query->next()){
+        if(nickName!=query->value(0).toString())
+        {
+            nickName = query->value(0).toString();
+        }
+        return query->value(0).toString();
+    }
+    else{
+        qDebug() << query->lastError();
+    }
+        return QString("Eror");
 }

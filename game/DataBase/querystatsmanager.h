@@ -16,6 +16,8 @@ public:
     int showStat(int columnValue);
     void setStats(QVector<int> &Stats);
 
+    bool getRobotStats();
+
 private:
 
     QSqlQuery *query;

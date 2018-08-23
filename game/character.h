@@ -28,6 +28,8 @@ public:
     void sendNewStats();
     int getStat(Language_t type);
     QString getPersonalityName(Character_t type);
+    void setName(QString name);
+    QString getName();
 
 private:
 
