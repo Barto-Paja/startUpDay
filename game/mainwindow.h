@@ -10,6 +10,7 @@
 #include "newgameform.h"
 #include "formarena.h"
 #include "formnewrobot.h"
+#include "formmenuingame.h"
 
 #include "DataBase/queryaccount.h"
 
@@ -22,7 +23,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void drawBackground(QPixmap &bck);
 
@@ -37,8 +38,11 @@ private slots:
     void switchPanel();
     void exitNewGamePanel();
     void exitSetIconPanel();
+    void exitNewRobotForm();
 
     void on_pushButton_Connect_clicked();
+
+    void on_pushButton_MultiPlayer_2_clicked();
 
 private:
     Ui::MainWindow *ui;

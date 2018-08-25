@@ -72,3 +72,17 @@ void QueryStatsManager::setStats(QVector<int> &Stats)
         return;
     }
 }
+
+bool QueryStatsManager::getRobotStats()
+{
+    query->prepare("SELECT * FROM ROBOT WHERE ID = :idPlayer");
+    query->bindValue(":idPlayer",getLogin());
+
+    if(query->exec() && query->next()){
+       return true;
+    }
+    else{
+        qDebug() << query->lastError();
+        return false;
+    }
+}

@@ -14,8 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QLabel { background-color: rgba(255, 255, 255, 225) };
-QPushButton { background-color: rgba(255, 255, 255, 0) };</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="3" column="5" colspan="3">
@@ -105,7 +104,7 @@ QPushButton { background-color: rgba(255, 255, 255, 0) };</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="resources.qrc">:/images/Bwhhltx.jpg</pixmap>
+        <pixmap resource="resources.qrc">:/images/avatars/Bwhhltx.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>false</bool>
@@ -124,7 +123,7 @@ QPushButton { background-color: rgba(255, 255, 255, 0) };</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="resources.qrc">:/images/storybook-characters-college-girls.jpg</pixmap>
+        <pixmap resource="resources.qrc">:/images/avatars/storybook-characters-college-girls.jpg</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -143,7 +142,7 @@ QPushButton { background-color: rgba(255, 255, 255, 0) };</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="resources.qrc">:/images/646.jpg</pixmap>
+        <pixmap resource="resources.qrc">:/images/avatars/646.jpg</pixmap>
        </property>
       </widget>
      </item>
@@ -159,7 +158,7 @@ QPushButton { background-color: rgba(255, 255, 255, 0) };</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="resources.qrc">:/images/avatar_6351.png</pixmap>
+        <pixmap resource="resources.qrc">:/images/avatars/avatar_6351.png</pixmap>
        </property>
       </widget>
      </item>

@@ -2,6 +2,7 @@
 
 QSqlDatabase DataBaseManagementLite::db = QSqlDatabase::addDatabase("QSQLITE");
 int DataBaseManagementLite::login = 0;
+QSqlQuery DataBaseManagementLite::query(db);
 
 DataBaseManagementLite::DataBaseManagementLite()
 {

@@ -24,4 +24,19 @@ typedef enum {
     LanguageTalent
 }Language_t;
 
+typedef enum{
+    RobotStatStrenght=2,
+    RobotStatDamage,
+    RobotStatShield,
+    RobotStatMovement,
+    RobotStatCharging,
+    RobotStatEnergy,
+    RobotStatOthers
+}RobotStat_t;
+
+typedef enum{
+    TeamRed=0,
+    TeamBlue
+}Team_t;
+
 #endif // STATISTICSMAP_H

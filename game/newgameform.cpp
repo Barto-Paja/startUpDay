@@ -49,6 +49,8 @@ void NewGameForm::on_pushButton_Next_clicked()
     player->setStats(tempTalent);
     player->sendNewStats();
 
+    player->setName(ui->lineEdit_Name->text());
+
     emit exitPanel();
 }
 

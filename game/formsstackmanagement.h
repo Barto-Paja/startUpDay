@@ -13,7 +13,8 @@ typedef enum {
     FormIDNewGame,
     FormIDSetIcon,
     FormIDNewRobot,
-    FormIDGameMenu
+    FormIDGameMenu,
+    FormIDGameArena
 
 }FormID_t;
 

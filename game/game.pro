@@ -43,7 +43,10 @@ SOURCES += \
     formnewrobot.cpp \
     DataBase/queryaccount.cpp \
     DataBase/querystatsmanager.cpp \
-    DataBase/querycharacter.cpp
+    DataBase/querycharacter.cpp \
+    formmenuingame.cpp \
+    robot.cpp \
+    gamesession.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -67,7 +70,11 @@ HEADERS += \
     DataBase/querystatsmanager.h \
     DataBase/querycharacter.h \
     statisticsmap.h \
-    charactersmap.h
+    charactersmap.h \
+    formmenuingame.h \
+    robot.h \
+    gamesession.h \
+    DataBase/columns.h
 
 FORMS += \
         mainwindow.ui \
@@ -78,7 +85,8 @@ FORMS += \
     formskilltree.ui \
     formarena.ui \
     formseticon.ui \
-    formnewrobot.ui
+    formnewrobot.ui \
+    formmenuingame.ui
 
 DISTFILES +=
 
